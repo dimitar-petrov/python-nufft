@@ -13,7 +13,6 @@ else:
     import builtins
 builtins.__NUFFT_SETUP__ = True
 import nufft
-version = nufft.__version__
 
 # Publish the library to PyPI.
 if "publish" in sys.argv[-1]:
@@ -43,7 +42,7 @@ if not os.environ.get('READTHEDOCS', None) == 'True':
 
 setup(
     name="nufft",
-    version=version,
+    version="0.0.2-dev",
     author="Daniel Foreman-Mackey",
     author_email="danfm@nyu.edu",
     url="https://github.com/dfm/python-nufft",
