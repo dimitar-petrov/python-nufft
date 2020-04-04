@@ -53,6 +53,9 @@ setup(
         'numpy',
         'sphinx_rtd_theme'
     ],
+    setup_requires=[
+        'numpy'
+    ],
     ext_modules=extensions,
     description="non-uniform FFTs",
     long_description=open("README.rst").read(),
